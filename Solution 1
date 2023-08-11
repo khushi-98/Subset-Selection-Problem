@@ -1,0 +1,15 @@
+#QUES 1
+import random 
+set={-12,-3,-6,7,2,-2,6,3,9,-7,-5,-8,1,11,-9,-4}
+c=list(set)
+c.sort
+f=0
+#print(c)
+for j in range(0,10000): 
+  
+   d=random.sample(c,5)
+   if(sum(d)==0):
+       f=f+1
+       print(d)
+print("Total values")
+print(f)
